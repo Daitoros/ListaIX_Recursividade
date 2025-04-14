@@ -1,14 +1,19 @@
 #include <stdio.h>
-
+#include <string.h>
 // Questão 08:
 // Desenvolver uma função recursiva que, dada
 // uma string, exiba-a invertida.
 
-int q8(char s[], int aux){
-    if(aux<(strlen(s)-1)){
-        q5(s, aux+1);
+void q8(char s[], int aux){
+    if(aux<(strlen(s))){
+        q8(s, aux+1);
         printf("%c", s[aux]);
     } else {
-        return 1;
+        return;
     }
+}
+void main(){
+    char nome[]= "Davi";
+
+    q8(nome,0);
 }

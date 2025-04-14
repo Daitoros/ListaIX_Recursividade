@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <string.h>
 // Questão 07:
 // Desenvolver uma função recursiva que
 // determine o número de caracteres comuns
@@ -19,4 +19,11 @@ int q7(char s1[], char s2[], int aux, int aux2, int cont){
     } else{
         return cont;
     }
+}
+
+void main(){
+    char nome1[] = "Davi";
+    char nome2[] = "Dime";
+
+    printf("%d", q7(nome1,nome2,0,0,0));
 }

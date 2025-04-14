@@ -14,3 +14,6 @@ int q4(int N){
         return 0;
     }
 }
+void main(){
+    q4(10);
+}

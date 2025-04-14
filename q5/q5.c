@@ -12,9 +12,13 @@
 
 int q5(int a1, int q, int n){
     if(n>0){
-        printf("%d", a1);
+        printf("%d ", a1);
         q5(a1*q,q,n-1);
     }else{
         return 0;
     }
+}
+
+void main(){
+    q5(5,5,5);
 }

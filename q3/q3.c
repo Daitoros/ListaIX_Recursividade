@@ -11,11 +11,14 @@ int q3(int N, int V){
     } else {
         if(V>N){
             q3(N, V/N);
-            printf("%d", V);
+            printf("%d ", V);
         }
         else{
-            printf("%d", V);
+            printf("%d ", V);
             return 0;
         }
     }
+}
+void main (){
+    q3(10,100);
 }
