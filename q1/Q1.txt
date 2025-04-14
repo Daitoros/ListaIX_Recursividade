@@ -1,0 +1,35 @@
+Questão 01:
+Analise a seguinte função recursiva:
+
+int funcao (int A, int B)
+{
+if (A >= B)
+{
+return funcao (A-B, B);
+}
+else
+{
+return A;
+}
+}
+
+O que é armazenado na variável x quando o
+comando x = funcao (32, 6); for executado?
+Observação: apresentar a sequência de
+chamadas recursivas disparadas pela execução
+do comando acima.
+
+
+solução:
+
+int funcao (int 32, int 6)
+{
+if (32 >= 6)
+{
+return funcao (26, 6); => funcao(20,6) => função(14,6) => função(8,6) => função(2,6) => retorna 2
+}
+else
+{
+return A;
+}
+}
